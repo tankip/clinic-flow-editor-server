@@ -1,0 +1,9 @@
+{
+    "apps" : [{
+      "name"        : "clinic-flow-server",
+      "script"      : "/home/rtanui/clinic-flow-editor-server/index.js",
+      "watch"       : false,
+      "exec_interpreter" : "babel-node",
+      "exec_mode"        : "fork"
+    }]
+  }
