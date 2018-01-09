@@ -177,7 +177,7 @@ module.exports = function() {
                     var user = request.payload.user;
 
                     connection.query('UPDATE ' + config.database.table + ' SET published=0 WHERE published=1 AND id="' + id + '";' +
-                                     'UPDATE ' + config.database.table + ' SET retired_by="' + user + '", retired=1 WHERE id=' + id + '', function(err, success) {
+                                     'UPDATE ' + config.database.table + ' SET retired_by="' + user + '", date_retired=NOW(), retired=1 WHERE id=' + id + '', function(err, success) {
                         if (err) throw err;
                         reply(success[1]);
                     });
