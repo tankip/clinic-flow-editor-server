@@ -3,22 +3,26 @@
 module.exports = function() {
     var obj = {
                 application : {
-                        host : 'xxxxx',
-                        port : 1234,
-                        key: 'xxxxxx',
-                        cert: 'xxxxxx',
-                        tls: false
+                        host : '10.50.80.240',
+                        port : 8010,
+                        key: '/opt/etl-latest/conf/ampath.or.ke.key',
+                        cert: '/opt/etl-latest/conf/ampath.or.ke.crt',
+                        tls: true
                 },
                 database : {
-                        host     : 'localhost',
-                        user     : 'xxxx',
-                        password : 'xxxx',
-                        port     : 1234,
-                        database : 'xxxx',
-                        table: 'xxxxx'
+                        host     : '10.50.80.240',
+                        user     : 'etl_user',
+                        password : '%RTF:zCML2K',
+                        port     : 3306,
+                        database : 'workflows',
+                        table: 'clinic_workflows'
                 },
                 server : {
-                        defaultHost : 'xxxxx'
+                        defaultHost : 'https://test2.ampath.or.ke:8010'
+                },
+                file : {
+                        filePath: '/home/rtanui/schemas-data/',
+                        filename: 'program-visits-config.json'
                 }
         };
 
