@@ -3,7 +3,7 @@
 const Hapi = require('hapi');
 const config = require('./src/config/config');
 const mysql = require('mysql');
-const connection = require('./src/connection/database');
+const connection = require('./src/connection/connection');
 const tls = require('tls');
 const fs = require('fs');
 
